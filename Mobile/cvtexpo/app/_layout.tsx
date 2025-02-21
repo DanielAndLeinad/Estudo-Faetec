@@ -20,6 +20,13 @@ export default function Layout() {
             title: '1° Componente',
           }}
         />
+        <Drawer.Screen
+          name="contador" // This is the name of the page and must match the url from root
+          options={{
+            drawerLabel: 'Contador',
+            title: 'Contador',
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );
