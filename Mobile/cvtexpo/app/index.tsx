@@ -10,6 +10,8 @@ export default function Index() {
       }}
     >
       <Text>Aula Sobre Dispositivos Moveis.</Text>
+      
     </View>
+
   );
 }
