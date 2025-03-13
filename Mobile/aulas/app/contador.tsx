@@ -4,7 +4,7 @@ import  styles  from '@/constants/styles'
 export default function Contador() {
   return (
     <View style={styles.centralizado}>
-      <Text> contador. </Text>
+      <Text> contador com useState. </Text>
     </View>
   );
 }

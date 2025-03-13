@@ -1,15 +1,10 @@
 import { Text, View } from "react-native";
+import  styles  from '@/constants/styles'
 
-export default function Index() {
+export default function index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Component Principal.</Text>
+    <View style={styles.centralizado}>
+      <Text> componente principal. </Text>
     </View>
   );
 }

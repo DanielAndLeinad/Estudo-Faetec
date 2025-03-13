@@ -1,14 +1,10 @@
-import { Text, View } from "react-native"
+import { Text, View } from "react-native";
+import  styles  from '@/constants/styles'
+
 export default function sobre() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Sobre o app.</Text>
+    <View style={styles.centralizado}>
+      <Text> sobre o app. </Text>
     </View>
   );
 }
