@@ -1,15 +1,10 @@
 import { Text, View } from "react-native";
+import  styles  from '@/constants/styles'
 
 export default function Contador() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>contador.</Text>
+    <View style={styles.centralizado}>
+      <Text> contador. </Text>
     </View>
   );
 }
