@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     centralizado:{
         flex: 1,
         justifyContent: 'center',
-        alignContent: 'center'
+        alignItems: 'center',
     }
 });
 

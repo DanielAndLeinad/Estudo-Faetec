@@ -1,5 +1,6 @@
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Drawer } from 'expo-router/drawer';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function Layout() {
   return (
@@ -10,6 +11,10 @@ export default function Layout() {
           options={{
             drawerLabel: 'Inicio',
             title: 'Bem-vindo',
+            drawerIcon: () =>
+              <Ionicons name ='checkmark-circle-outline'
+            size={18} color={'gray'}
+            />
           }}
         />
         <Drawer.Screen
@@ -17,6 +22,9 @@ export default function Layout() {
           options={{
             drawerLabel: 'home',
             title: 'Bem-vindo',
+            drawerIcon: () =>
+            <Ionicons name='alert-circle-outline'
+            />
           }}
         />
         <Drawer.Screen
@@ -24,6 +32,10 @@ export default function Layout() {
           options={{
             drawerLabel: 'Contador',
             title: 'Contador',
+            drawerIcon: () =>
+              <Ionicons name='stopwatch-outline'
+              size={18} color={'red'}
+              />
           }}
         />
       </Drawer>
