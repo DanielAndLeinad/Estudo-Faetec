@@ -13,7 +13,7 @@ export default function BotaoPadrao({ texto, rota, onPress }: Props) {
 
   const handlePress = () => {
     if (rota) {
-      router.push(rota);
+      router.push(rota as any);
     } else if (onPress) {
       onPress();
     }

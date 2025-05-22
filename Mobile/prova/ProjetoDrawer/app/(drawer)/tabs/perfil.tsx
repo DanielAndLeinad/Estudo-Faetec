@@ -1,11 +1,16 @@
 import { View, Text, StyleSheet } from 'react-native';
-import BotaoPadrao from '../../../components/BotaoPadrao';
+import { TouchableOpacity } from 'react-native';
+import { useRouter } from 'expo-router';
 
 export default function Perfil() {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tela de Perfil</Text>
-      <BotaoPadrao texto="Voltar ao Início" rota="/home" />
+      <TouchableOpacity onPress={() => router.push('/home')}>
+        <Text>Ir para Home</Text>
+      </TouchableOpacity>
     </View>
   );
 }
