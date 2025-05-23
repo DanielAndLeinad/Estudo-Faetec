@@ -19,15 +19,25 @@
 
 //  })();
 
+// (async () => {
+//     const db = require("./bd");
+//     const result2 = await db.updateCustomer({
+//         id: 4,
+//         nome: "Lucas Broxao",
+//         idade: 25,
+//         uf: "SP"
+//     });
+//     console.log(result2);
+
+
+// })();
+
+
+// index.js
 (async () => {
     const db = require("./bd");
-    const result2 = await db.updateCustomer({
-        id: 4,
-        nome: "Lucas Broxao",
-        idade: 25,
-        uf: "SP"
-    });
-    console.log(result2);
-
-
+    console.log('Apagar registros');
+    const result3 = await db.deleteCustomer(1); // inserir o id do cliente que deseja apagar
+    console.log(result3);
 })();
+
